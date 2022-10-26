@@ -20,7 +20,7 @@ public class Program {
         System.out.print("Enter departament's name: ");
         String departamentName= sc.nextLine();
 
-        System.out.print("Enter worker data: ");
+        System.out.println("Enter worker data: ");
         System.out.print("Name: ");
         String workerName= sc.nextLine();
 
@@ -35,8 +35,8 @@ public class Program {
         System.out.print("How many contracts to this worker");
         int n = sc.nextInt();
 
-        for(int i=1; i<n; i++){
-            System.out.println("Enter contract #"+ i +" data: ");
+        for(int i=1; i<=n; i++){
+            System.out.println("Enter contract #"+ i+1 +" data: ");
             System.out.print("Date (DD/MM/YYYY) ");
             Date contractDate = sdf.parse(sc.next());
             System.out.print("Value per hour: ");
